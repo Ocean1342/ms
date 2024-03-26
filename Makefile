@@ -8,6 +8,9 @@ up:
 down:
 	docker compose down
 
+restart:
+	docker compose restart
+
 build:
 	docker compose build
 
@@ -21,7 +24,7 @@ tonginx:
 	docker compose exec -it nginx /bin/sh
 
 log:
-	docker compose logs $(cnt)
+	docker compose logs $(с)
 
 ps:
 	docker compose ps
